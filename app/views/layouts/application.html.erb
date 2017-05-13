@@ -5,10 +5,22 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <%= javascript_include_tag "application" %>
+    <script type="text/javascript">
+       $(function () {
+          $("#myModal").modal({show:false});
+      });
+    </script>
+    </head>
 
   <body>
+
+    <%= render "welcome/login_modal" %>
+    <%= render "welcome/sign_up_modal" %>
+    <%= render 'header' %>
+
+    <%= bootstrap_flash %>
+
     <%= yield %>
   </body>
 </html>
