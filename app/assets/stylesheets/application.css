@@ -16,6 +16,9 @@
  *= require font-awesome
  */
 
+body {
+  background-color: #eee;
+}
 
 .navbar-default {
   background-color: #365899;
