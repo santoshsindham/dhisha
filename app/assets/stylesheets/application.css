@@ -16,6 +16,9 @@
  *= require font-awesome
  */
 
+body {
+  background-color: #eee;
+}
 
 .navbar-default {
   background-color: #365899;
@@ -85,4 +88,24 @@
     color: #111010;
     background-color: #e9ebee;
   }
+}
+
+.rediconcolor {
+  color: #e80417;
+}
+
+.greeniconcolor {
+  color: green;
+}
+
+.blueiconcolor {
+  color: blue;
+}
+
+.bigIconSize12 {
+  font-size: 12em !important;
+}
+
+.bigIconSize20 {
+  font-size: 20em !important;
 }
