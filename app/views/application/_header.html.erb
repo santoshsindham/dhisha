@@ -22,11 +22,21 @@
         <li><a href="/home/about"><i class="fa fa-university" aria-hidden="true"></i> About us</a></li>
         <li><a href="/home/contact"><i class="fa fa-users" aria-hidden="true"></i> Contacts</a></li>
         <% if user_signed_in? %>
-            <li><p class="navbar-text">Signed in as <a href="#" class="navbar-link"><%= current_user.email %></a></p></li>
-            <li><%= link_to "Log out", destroy_user_session_path, :method => :delete, :class => "btn btn-small" %></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Hi, <%= current_user.email %> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">My profile</a></li>
+                <li><a href="#">Something else here</a></li>
+                <% if (current_user.has_role? :admin) || (current_user.has_role? :superadmin) %>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/admin">Admin</a></li>
+                <% end %>
+                <li><a href="/users/sign_out" data-method="delete"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a></li>
+              </ul>
+            </li>
           <% else %>
-              <li><%= link_to "Login", "#login", "data-toggle" => "modal", :class => 'btn btn-small btn-primary', "data-target" => "#login" %></li>
-              <li><%= link_to "Sign up", "#sign_up", "data-toggle" => "modal", :class => 'btn btn-small btn-primary', "data-target" => "#sign_up" %></li>
+              <li><%= link_to " Login", "#login", "data-toggle" => "modal", :class => 'btn btn-small btn-success fa fa-sign-in', "data-target" => "#login" %></li>
+              <li><%= link_to " Sign up", "#sign_up", "data-toggle" => "modal", :class => 'btn btn-small btn-warning fa fa-user', "data-target" => "#sign_up" %></li>
         <% end %>
       </ul>
       </div><!-- /.navbar-collapse -->
