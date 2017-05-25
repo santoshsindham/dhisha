@@ -102,10 +102,22 @@ body {
   color: blue;
 }
 
+.orangeiconcolor {
+  color: orange;
+}
+
 .bigIconSize12 {
   font-size: 12em !important;
 }
 
 .bigIconSize20 {
   font-size: 20em !important;
+}
+
+.font-color-blue {
+  color: blue;
+}
+
+.font-color-red {
+  color: red;
 }

@@ -23,15 +23,14 @@
         <li><a href="/home/contact"><i class="fa fa-users" aria-hidden="true"></i> Contacts</a></li>
         <% if user_signed_in? %>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Hi, <%= current_user.email %> <span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Hi, <%= current_user.first_name || current_user.email %> <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">My profile</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="/users/edit"><i class="fa fa-pencil-square-o greeniconcolor" aria-hidden="true"></i> Update profile</a></li>
                 <% if (current_user.has_role? :admin) || (current_user.has_role? :superadmin) %>
                   <li role="separator" class="divider"></li>
-                  <li><a href="/admin">Admin</a></li>
+                  <li><a href="/admin"><i class="fa fa-exclamation-triangle rediconcolor" aria-hidden="true"></i> Admin</a></li>
                 <% end %>
-                <li><a href="/users/sign_out" data-method="delete"><i class="fa fa-sign-out" aria-hidden="true"></i> Log out</a></li>
+                <li><a href="/users/sign_out" data-method="delete"><i class="fa fa-power-off blueiconcolor" aria-hidden="true"></i> Log out</a></li>
               </ul>
             </li>
           <% else %>
