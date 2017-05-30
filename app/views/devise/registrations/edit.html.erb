@@ -43,7 +43,7 @@
         <%= f.password_field :password_confirmation, class: 'form-control', placeholder: "leave this blank if you are not changing your password"  %>
       </div>
       <div class="form-group">
-        <%= f.label :current_password %> <span class="font-color-red"><b>(<%= t('.we_need_your_current_password_to_confirm_your_changes', default: 'we need your current password to confirm these changes') %>)</b></span>
+        <%= f.label :current_password %> <span class="font-color-red"><b>(<%= t('.we_need_your_current_password_to_confirm_these_changes', default: 'we need your current password to confirm these changes') %>)</b></span>
         <%= f.password_field :current_password, class: 'form-control', placeholder: "We need your current password to confirm these changes" %>
       </div>
       <%= f.submit t('.update', default: 'Update'), class: 'btn btn-primary' %>
