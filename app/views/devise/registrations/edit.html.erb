@@ -28,7 +28,7 @@
       </div>
       <div class="form-group">
         <%= f.label :address %>
-        <%= f.text_area :address, class: 'form-control', placeholder: 'Please enter your complete address along with postcode'  %>
+        <%= f.text_area :address, class: 'form-control', maxlength: 250, rows: 4, placeholder: 'Please enter your complete address along with postcode, only 250 characters allowed.'  %>
       </div>
       <div class="form-group">
         <%= f.label :email %>
