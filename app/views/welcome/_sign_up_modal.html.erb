@@ -12,13 +12,13 @@
           <%= devise_error_messages! %>
 
           <div><%= f.label :email %><br />
-          <%= f.email_field :email, :autofocus => true, :class => 'form-control' %></div>
+          <%= f.email_field :email, :autofocus => true, placeholder: 'Please enter your email id.', :class => 'form-control' %></div>
 
           <div><%= f.label :password %><br />
-          <%= f.password_field :password, :class => 'form-control' %></div>
+          <%= f.password_field :password, placeholder: 'Please enter your password.', :class => 'form-control' %></div>
 
           <div><%= f.label :password_confirmation %><br />
-          <%= f.password_field :password_confirmation, :class => 'form-control' %></div>
+          <%= f.password_field :password_confirmation, placeholder: 'Reconfirm your password.', :class => 'form-control' %></div>
         </div>
         </div>
         <div class="modal-footer">

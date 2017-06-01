@@ -118,6 +118,34 @@ body {
   color: blue;
 }
 
+.font-color-magenta {
+  color: magenta;
+}
+
+.font-color-green {
+  color: green;
+}
+
+.font-color-yellow {
+  color: yellow;
+}
+
+.font-color-violet {
+  color: violet;
+}
+
+.font-color-grey {
+  color: grey;
+}
+
 .font-color-red {
   color: red;
+}
+
+.font-color-indigo {
+  color: indigo;
+}
+
+.font-color-orange {
+  color: orange;
 }
