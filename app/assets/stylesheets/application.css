@@ -118,6 +118,14 @@ body {
   color: blue;
 }
 
+.font-color-white {
+  color: white;
+}
+
+.font-color-black {
+  color: black;
+}
+
 .font-color-magenta {
   color: magenta;
 }
