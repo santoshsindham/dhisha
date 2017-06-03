@@ -23,7 +23,7 @@
         <li><a href="/home/contact"><i class="fa fa-users" aria-hidden="true"></i> Contacts</a></li>
         <% if user_signed_in? %>
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b> Hi,<i> <%= display_user_name %> <span class="caret"></span></b></i></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b> Hi, <%= display_user_name %> <span class="caret"></span></b></a>
               <ul class="dropdown-menu">
                 <li><a href="/users/edit"><i class="fa fa-pencil-square-o greeniconcolor" aria-hidden="true"></i> Update profile</a></li>
                 <% if (current_user.has_role? :admin) || (current_user.has_role? :superadmin) %>
