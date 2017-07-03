@@ -12,7 +12,7 @@ module ApplicationHelper
   end
 
   def display_user_name
-    if current_user.first_name.length != 0
+    if (current_user.first_name && current_user.first_name.length != 0)
       current_user.first_name + ' ' + current_user.last_name
     else
       current_user.email
