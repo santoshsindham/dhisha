@@ -95,12 +95,15 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
+  config.action_mailer.default :charset => "utf-8"
+
   ActionMailer::Base.smtp_settings = {
-       :address              => ENV["AWS_SES_SERVER"],
-       :domain               => ENV["DOMAIN_NAME"],
-       :port                 => 587,
-       :user_name            => ENV["AWS_SES_USERNAME"],
-       :password             => ENV["AWS_SES_PASSWORD"],
+       :address              => ENV.fetch("AWS_SES_SERVER"),
+       :domain               => ENV.fetch("DOMAIN_NAME"),
+       :port                 => 25,
+       :enable_starttls_auto => true,
+       :user_name            => ENV.fetch("AWS_SES_USERNAME"),
+       :password             => ENV.fetch("AWS_SES_PASSWORD"),
        :authentication       => :login
   }
 end
