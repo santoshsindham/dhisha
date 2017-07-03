@@ -1,6 +1,15 @@
-<p><%= t('.greeting', recipient: @resource.email, default: "Welcome #{@resource.email}!") %></p>
+<h2><p><%= t('.greeting', recipient: @resource.email, default: "Welcome to Dhisha, #{@resource.email}") %></p></h2>
 
-<p><%= t('.instruction', default: 'You can confirm your account email through the link below:') %></p>
+<h3>Before you can access your account, we request you to confirm your email id by using the link below.</h3>
 
-<p><%= link_to t('.action', default: 'Confirm my account'),
-         confirmation_url(@resource, confirmation_token: @token, locale: I18n.locale) %></p>
+
+<h3><p><%= link_to t('.action', default: 'Confirm my account'),
+         confirmation_url(@resource, confirmation_token: @token, locale: I18n.locale) %></p></h3>
+
+<p>Please note that by confirming your email id, you agree to grant us permission to contact you occasionally. We shall not spam you.</p>
+
+<p>Once you confirm your email id, please update your profile details in our website (after sign in to our website, you will see Update profile link on click of your name on top right corner) </p>
+
+
+<p>Thanks,</p>
+<p>Dhisha</p>
