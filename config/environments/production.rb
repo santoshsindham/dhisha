@@ -89,5 +89,18 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # aws ses email config here
+  config.action_mailer.default_url_options = { host: 'dhisha.org', port: 80 }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  ActionMailer::Base.smtp_settings = {
+       :address              => ENV["AWS_SES_SERVER"],
+       :domain               => ENV["DOMAIN_NAME"],
+       :port                 => 587,
+       :user_name            => ENV["AWS_SES_USERNAME"],
+       :password             => ENV["AWS_SES_PASSWORD"],
+       :authentication       => :login
+  }
 end
