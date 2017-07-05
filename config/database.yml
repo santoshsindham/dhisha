@@ -5,4 +5,4 @@ development:
   database: dhisha_dev
   pool: 5
   username: root
-  password: 
+  password: ENV
