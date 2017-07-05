@@ -7,6 +7,15 @@ development:
   username: root
   password: **supersecretdevpassword**
 
+test:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: dhisha_test
+  pool: 5
+  username: root
+  password: **supersecrettestpassword**
+
 production:
   adapter: mysql
   encoding: utf8
