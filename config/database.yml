@@ -5,4 +5,13 @@ development:
   database: dhisha_dev
   pool: 5
   username: root
-  password: 
+  password: ENV
+
+production:
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: dhisha_prod
+  pool: 5
+  username: root
+  password: **supersecretpassword**
