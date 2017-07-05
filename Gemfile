@@ -65,3 +65,4 @@ gem 'rails_admin', '~> 1.1.1'
 gem "cancancan"
 gem "rolify"
 gem "passenger"
+gem 'mysql2', '~> 0.3.20'
