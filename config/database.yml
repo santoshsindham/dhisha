@@ -5,7 +5,7 @@ development:
   database: dhisha_dev
   pool: 5
   username: root
-  password: ENV
+  password: **supersecretdevpassword**
 
 production:
   adapter: mysql
@@ -14,4 +14,4 @@ production:
   database: dhisha_prod
   pool: 5
   username: root
-  password: **supersecretpassword**
+  password: **supersecretprodpassword**
