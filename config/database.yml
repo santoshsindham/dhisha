@@ -14,4 +14,4 @@ production:
   database: dhisha_prod
   pool: 5
   username: root
-  password: **supersecretpassword**
+  password: **supersecretprodpassword**
