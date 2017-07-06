@@ -64,5 +64,13 @@ gem 'devise-bootstrap-views'
 gem 'rails_admin', '~> 1.1.1'
 gem "cancancan"
 gem "rolify"
-gem "passenger"
 gem 'mysql2', '~> 0.3.20'
+gem 'figaro'
+gem 'puma'
+group :development do
+  gem 'capistrano'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rvm'
+end
