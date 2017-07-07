@@ -100,7 +100,8 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.default :charset => "utf-8"
-
+  config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+  
   ActionMailer::Base.smtp_settings = {
        :address              => ENV["AWS_SES_SERVER"],
        :domain               => ENV["DOMAIN_NAME"],
