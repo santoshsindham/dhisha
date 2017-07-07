@@ -1,9 +1,10 @@
 
 # Load DSL and set up stages
-# require "capistrano/setup"
+require "capistrano/setup"
 
 # Include default deployment tasks
-# require "capistrano/deploy"
+require "capistrano/deploy"
+require 'capistrano/rails/assets'
 
 
 # Load the SCM plugin appropriate to your project:
@@ -15,7 +16,7 @@
 # install_plugin Capistrano::SCM::Svn
 # or
 require "capistrano/scm/git"
-require "capistrano/rails"
+#require "capistrano/rails"
 
 install_plugin Capistrano::SCM::Git
 
