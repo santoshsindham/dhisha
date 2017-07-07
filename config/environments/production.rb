@@ -91,6 +91,7 @@ Rails.application.configure do
   config.assets.digest = true
   config.serve_static_assets = false
   config.assets.compile = false
+  config.serve_static_files = true
 
 
   # aws ses email config here
