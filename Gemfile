@@ -68,9 +68,9 @@ gem 'mysql2', '~> 0.3.20'
 gem 'figaro'
 gem 'puma'
 group :development do
-  gem 'capistrano'
+  gem 'capistrano', '~> 3.6'
+  gem 'capistrano-rails', '~> 1.3'
   gem 'capistrano3-puma'
-  gem 'capistrano-rails', require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
 end
