@@ -89,6 +89,9 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
+  config.assets.digest = true
+  config.serve_static_assets = false
+
 
   # aws ses email config here
   config.action_mailer.default_url_options = { host: 'dhisha.org', port: 80 }
