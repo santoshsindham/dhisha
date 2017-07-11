@@ -67,6 +67,8 @@ gem "rolify"
 gem 'mysql2', '~> 0.3.20'
 gem 'figaro'
 gem 'puma'
+gem 'nokogiri'
+gem 'premailer-rails'
 group :development do
   gem 'capistrano', '~> 3.6'
   gem 'capistrano-rails', '~> 1.3'
