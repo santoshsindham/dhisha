@@ -96,6 +96,8 @@ GEM
     coffee-script-source (1.12.2)
     commonjs (0.2.7)
     concurrent-ruby (1.0.5)
+    css_parser (1.5.0)
+      addressable
     devise-bootstrap-views (0.0.11)
     erubi (1.6.1)
     erubis (2.7.0)
@@ -109,6 +111,7 @@ GEM
       activesupport (>= 4.2.0)
     haml (4.0.7)
       tilt
+    htmlentities (4.3.4)
     i18n (0.8.4)
     jbuilder (2.7.0)
       activesupport (>= 4.2.0)
@@ -153,6 +156,13 @@ GEM
     nokogiri (1.8.0)
       mini_portile2 (~> 2.2.0)
     orm_adapter (0.5.0)
+    premailer (1.10.4)
+      addressable
+      css_parser (>= 1.4.10)
+      htmlentities (>= 4.0.0)
+    premailer-rails (1.9.7)
+      actionmailer (>= 3, < 6)
+      premailer (~> 1.7, >= 1.7.9)
     public_suffix (2.0.5)
     puma (3.9.1)
     rack (2.0.3)
@@ -284,6 +294,8 @@ DEPENDENCIES
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   mysql2 (~> 0.3.20)
+  nokogiri
+  premailer-rails
   puma
   rails (~> 5.1.0)
   rails_admin (~> 1.1.1)

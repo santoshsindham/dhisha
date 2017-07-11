@@ -17,7 +17,7 @@ Devise.setup do |config|
   config.mailer_sender = 'support@dhisha.org'
 
   # Configure the class responsible to send e-mails.
-  # config.mailer = 'Devise::Mailer'
+  config.mailer = 'DeviseCustomMailer'
 
   # Configure the parent class responsible to send e-mails.
   # config.parent_mailer = 'ActionMailer::Base'

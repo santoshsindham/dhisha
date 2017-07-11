@@ -1,15 +1,30 @@
-<h2><p><%= t('.greeting', recipient: @resource.email, default: "Welcome to Dhisha, #{@resource.email}") %></p></h2>
+<div id="email-wrapper">
+<div id="header">
+<table>
+<tbody>
+<tr>
+<td width="40px"><%= email_image_tag "favicon.ico", :class => "logo" %></td>
+<td>
+<h3>Welcome to Dhisha  <%= @resource.email %>!</h3>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="body">
+<div>
+Before you can access your account, we request you to confirm your email id by using the link below.
+<%= link_to t('.action', default: 'Confirm my account'),
+         confirmation_url(@resource, confirmation_token: @token, locale: I18n.locale) %>
+</div>
+<div>
+  <p>Please note that by confirming your email id, you agree to grant us permission to contact you occasionally via email. We shall not spam you.</p>
 
-<h3>Before you can access your account, we request you to confirm your email id by using the link below.</h3>
+  <p>Once you confirm your email id, please update your profile details by clicking on your name in our website and following the Update profile link. </p>
 
 
-<h3><p><%= link_to t('.action', default: 'Confirm my account'),
-         confirmation_url(@resource, confirmation_token: @token, locale: I18n.locale) %></p></h3>
-
-<p>Please note that by confirming your email id, you agree to grant us permission to contact you occasionally via email. We shall not spam you.</p>
-
-<p>Once you confirm your email id, please update your profile details by clicking on your name in our website and following the Update profile link. </p>
-
-
-<p>Thanks,</p>
-<p>Dhisha human development trust.</p>
+  <p>Thanks,</p>
+  <p>Dhisha human development trust.</p>
+</div>
+</div>
+</div>
