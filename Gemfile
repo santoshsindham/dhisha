@@ -69,6 +69,8 @@ gem 'figaro'
 gem 'puma'
 gem 'nokogiri'
 gem 'premailer-rails'
+gem 'social-share-button'
+
 group :development do
   gem 'capistrano', '~> 3.6'
   gem 'capistrano-rails', '~> 1.3'
