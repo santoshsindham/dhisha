@@ -16,6 +16,7 @@
 //= require turbolinks
 //= require_tree .
 //= require twitter/bootstrap
+//= require social-share-button
 
 
 $(document).ready(function(){
