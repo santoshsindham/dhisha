@@ -7,7 +7,7 @@ class MessageMailer < ApplicationMailer
   #
   def contact_me(message)
     @greeting = "Hi"
-    @body = message.body
-    mail to: "chandu3211@gmail.com", cc: "santosh.sindham@gmail.com", from: message.email
+    @body = "Hi," + "\n" + "Message from email id: "+ message.email + "\n" + message.body
+    mail to: "chandu3211@gmail.com", cc: "santosh.sindham@gmail.com", from: "contact@dhisha.org"
   end
 end
