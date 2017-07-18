@@ -27,6 +27,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b> Hi, <%= display_user_name %> <span class="caret"></span></b></a>
               <ul class="dropdown-menu">
                 <li><a href="/users/edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Update profile</a></li>
+                <li><a href="/contact-me"><i class="fa fa-question-circle" aria-hidden="true"></i> Submit query</a></li>
                 <% if (current_user.has_role? :admin) || (current_user.has_role? :superadmin) %>
                   <li role="separator" class="divider"></li>
                   <li><a href="/admin"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Admin</a></li>
@@ -35,8 +36,9 @@
               </ul>
             </li>
           <% else %>
-              <li><%= link_to " Login", "#login", "data-toggle" => "modal", :class => 'btn btn-lg btn-success', "data-target" => "#login" %></li>
-              <li><%= link_to " Sign up", "#sign_up", "data-toggle" => "modal", :class => 'btn btn-lg btn-warning', "data-target" => "#sign_up" %></li>
+              <li><%= link_to " Login", "#login", "data-toggle" => "modal", :class => 'btn btn-md btn-success', "data-target" => "#login" %></li>
+              <li><%= link_to " Sign up", "#sign_up", "data-toggle" => "modal", :class => 'btn btn-md btn-warning', "data-target" => "#sign_up" %></li>
+              <li><a href="/contact-me" class="btn btn-md btn-danger"><i class="fa fa-question-circle" aria-hidden="true"></i> Reach us</a></li>
         <% end %>
       </ul>
       </div><!-- /.navbar-collapse -->
