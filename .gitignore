@@ -23,4 +23,7 @@
 .byebug_history
 
 config/database.yml
-config/application.yml 
+config/application.yml
+
+.DS_Store
+config/.DS_Store
