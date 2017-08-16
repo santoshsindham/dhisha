@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'home#index'
   get 'home/index'
+  get 'home/computerforcause'
   get 'home/vision'
   get 'home/objectives'
   get 'home/about'
