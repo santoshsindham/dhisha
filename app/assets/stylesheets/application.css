@@ -173,12 +173,3 @@ body {
      top: 0;
      bottom: auto;
  }
-
- .navbar-brand {
-   padding: 0px; /* firefox bug fix */
- }
- .navbar-brand>img {
-   height: 200%;
-   padding: 0px; /* firefox bug fix */
-   width: auto;
- }
