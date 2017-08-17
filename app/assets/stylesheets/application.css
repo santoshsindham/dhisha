@@ -17,6 +17,10 @@
  *= require social-share-button
  */
 
+ .oswald {
+   font-family: 'Oswald', sans-serif;
+ }
+
 body {
   background-color: #eee;
 }
