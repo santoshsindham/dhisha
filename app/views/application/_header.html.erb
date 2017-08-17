@@ -17,8 +17,10 @@
       <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
 
+        <li><a href="/home/index"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Support a cause <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Support a cause <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="/home/computerforcause"><i class="fa fa-desktop" aria-hidden="true"></i> Computers for a cause</a></li>
             <li role="separator" class="divider"></li>
@@ -27,15 +29,17 @@
         </li>
 
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Know more <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-info-circle" aria-hidden="true"></i> Know more <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="/home/index"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
             <li><a href="/home/vision"><i class="fa fa-eye" aria-hidden="true"></i> Vision</a></li>
             <li><a href="/home/objectives"><i class="fa fa-hashtag" aria-hidden="true"></i> Objectives</a></li>
             <li><a href="/home/about"><i class="fa fa-university" aria-hidden="true"></i> About us</a></li>
             <li><a href="/home/contact"><i class="fa fa-users" aria-hidden="true"></i> Contacts</a></li>
           </ul>
         </li>
+
+        <li><a href="/contact-me"><i class="fa fa-question-circle" aria-hidden="true"></i> Contact us</a></li>
+
         <% if user_signed_in? %>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><b> Hi, <%= display_user_name %> <span class="caret"></span></b></a>
@@ -50,9 +54,8 @@
               </ul>
             </li>
           <% else %>
-              <li><%= link_to " Login", "#login", "data-toggle" => "modal", "data-target" => "#login" %></li>
-              <li><%= link_to " Sign up", "#sign_up", "data-toggle" => "modal","data-target" => "#sign_up" %></li>
-              <li><a href="/contact-me"><i class="fa fa-question-circle" aria-hidden="true"></i> Reach us</a></li>
+              <li><%= link_to " Login", "#login", "data-toggle" => "modal", "data-target" => "#login", style: "color: pink;" %></li>
+              <li><%= link_to " Sign up", "#sign_up", "data-toggle" => "modal","data-target" => "#sign_up", style: "color: pink;" %></li>
         <% end %>
       </ul>
       </div><!-- /.navbar-collapse -->
