@@ -17,7 +17,15 @@
  *= require social-share-button
  */
 
- .oswald {
+.navbar-brand {
+     position: relative;
+     background: url(/dhisha_logo.png);
+     width: 60px;
+     left: 15px;
+     background-size: contain;
+ }
+
+.oswald {
    font-family: 'Oswald', sans-serif;
  }
 
