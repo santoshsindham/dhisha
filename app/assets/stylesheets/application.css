@@ -25,8 +25,8 @@
      background-size: contain;
  }
 
-.oswald {
-   font-family: 'Oswald', sans-serif;
+.noto-font-class {
+   font-family: "Noto Serif","DejaVu Serif",serif;
  }
 
 body {
