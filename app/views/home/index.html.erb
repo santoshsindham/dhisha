@@ -4,54 +4,69 @@
 ================================================== -->
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
-<div class="text-center">
-  <i class="fa fa-cc-paypal fa-5x" aria-hidden="true"></i> <%= render 'paypal_donate_button' %>
-</div>
 <div class="container marketing">
 
 
   <!-- Three columns of text below the carousel -->
-  <div class="row">
-    <div class="col-lg-4">
-      <i class="fa fa-book bigIconSize12 blueiconcolor" aria-hidden="true"></i>
-      <h2>Education </h2>
-      <p>The root cause for most of the social problems is poverty, which is due to lack of education and skill set required for obtaining suitable employment.</p>
-      <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <i class="fa fa-child bigIconSize12 greeniconcolor" aria-hidden="true"></i>
-      <h2>Empowerment</h2>
-      <p>Our mission is to contribute to the social and financial development of the neglected sector of our city. We are and will continue to work against all odds to assist these people in the best possible manner.</p>
-      <p><a class="btn btn-default" href="/home/objectives" role="button">Know more &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <i class="fa fa-heartbeat bigIconSize12 rediconcolor" aria-hidden="true"></i>
-      <h2>Health</h2>
-      <p> Dhisha aims at reducing the financial burden of health care on poor households and enhance their access to quality health care.</p>
-      <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row -->
-
-
-  <!-- Example row of columns -->
-  <div class="row">
-    <div class="col-lg-4">
-      <h2>Our Vision</h2>
-      <p>The root cause for most of the social problems is poverty, which is due to lack of education and skill set required
-        for obtaining suitable employment. Dhisha aims at eradicating poverty by providing skill development training (using skill India initiative
-        by Govt of India effectively) to unemployed and bringing economically weaker section to mainstream by the power of quality education, skill training
-        and awareness.</p>
-      <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p>
+    <div class="row-full backgroundPaypal">
+      <div class="text-center animated 10s jackInTheBox">
+        <i class="fa fa-cc-paypal fa-5x" aria-hidden="true"></i> <%= render 'paypal_donate_button' %>
+      </div>
     </div>
-    <div class="col-lg-4">
-      <h2>Our Mission</h2>
-      <p>Our mission is to contribute to the social and financial development of the neglected sector of our city. We are and will continue to work against all odds to assist these people in the best possible manner.</p>
-      <p><a class="btn btn-default" href="/home/objectives" role="button">Know more &raquo;</a></p>
-   </div>
-    <div class="col-lg-4">
-      <h2>And lastly, more of what we want to do</h2>
-      <p>Equity in access to health care services and the related financial burden on households, hence, has been one of the major concerns of Indian health system. The challenges are related to reducing the financial burden of health care on poor households and enhance their access to quality health care.</p>
-      <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p>
+
+    <div class="row-full backgroundGold">
+    <div class="row font-color-indigo">
+      <div class="col-lg-4">
+        <i class="fa fa-book bigIconSize12 blueiconcolor wow rollIn" aria-hidden="true"></i>
+
+        <section class="wow slideInUp">
+          <h2>Education </h2>
+          <p>The root cause for most of the social problems is poverty, which is due to lack of education and skill set required for obtaining suitable employment.</p>
+          <!-- <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p> -->
+        </section>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <i class="fa fa-child bigIconSize12 greeniconcolor wow pulse" aria-hidden="true"></i>
+
+        <section class="wow slideInDown">
+          <h2>Empowerment</h2>
+          <p>Our mission is to contribute to the social and financial development of the neglected sector of our city. We are and will continue to work against all odds to assist these people in the best possible manner.</p>
+          <p><a class="btn btn-default" href="/home/objectives" role="button">Know more &raquo;</a></p>
+        </section>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <i class="fa fa-heartbeat bigIconSize12 rediconcolor wow bounceInRight" aria-hidden="true"></i>
+
+        <section class="wow slideInRight">
+          <h2>Health</h2>
+          <p> Dhisha aims at reducing the financial burden of health care on poor households and enhance their access to quality health care.</p>
+          <!-- <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p> -->
+        </section>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div>
+
+
+  <div class="row-full backgroundBottom">
+    <div class="row font-color-chartreuse">
+      <div class="col-lg-4 wow rubberBand">
+        <h2>Our Vision</h2>
+        <p>The root cause for most of the social problems is poverty, which is due to lack of education and skill set required
+          for obtaining suitable employment. Dhisha aims at eradicating poverty by providing skill development training (using skill India initiative
+          by Govt of India effectively) to unemployed and bringing economically weaker section to mainstream by the power of quality education, skill training
+          and awareness.</p>
+        <!-- <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p> -->
+      </div>
+      <div class="col-lg-4 wow rotateIn">
+        <h2>Our Mission</h2>
+        <p>Our mission is to contribute to the social and financial development of the neglected sector of our city. We are and will continue to work against all odds to assist these people in the best possible manner.</p>
+        <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p>
+     </div>
+      <div class="col-lg-4 wow lightSpeedIn">
+        <h2>And lastly, more of what we want to do</h2>
+        <p>Equity in access to health care services and the related financial burden on households, hence, has been one of the major concerns of Indian health system. The challenges are related to reducing the financial burden of health care on poor households and enhance their access to quality health care.</p>
+        <!-- <p><a class="btn btn-default" href="/home/vision" role="button">Know more &raquo;</a></p> -->
+      </div>
     </div>
   </div>
 </div>
