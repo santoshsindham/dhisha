@@ -1,4 +1,4 @@
 <% if !user_signed_in? %>
-  <%= link_to "Sign up today", "#sign_up", "data-toggle" => "modal", :class => 'btn btn-lg btn-primary', "data-target" => "#sign_up" %>
-  <%= link_to "Already a member? Sign in.", "#login", "data-toggle" => "modal", :class => 'btn btn-lg btn-danger', "data-target" => "#login" %>
+  <%= link_to "Sign up today", "#sign_up", "data-toggle" => "modal", :class => 'btn btn-lg btn-primary animated slideInLeft', "data-target" => "#sign_up" %>
+  <%= link_to "Already a member? Sign in.", "#login", "data-toggle" => "modal", :class => 'btn btn-lg btn-danger animated slideInRight', "data-target" => "#login" %>
 <% end %>
