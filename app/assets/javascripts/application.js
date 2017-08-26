@@ -24,3 +24,10 @@ $(document).ready(function(){
     $('.alert').remove();
   }, 30000);
  })
+
+function full_row_resize(){
+     var body_width = $('body').width();
+     $('.row-full').css('width', (body_width));
+     $('.row-full').css('margin-left', ('-'+(body_width/2)+'px'));
+     return false;
+ }
