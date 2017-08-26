@@ -122,6 +122,18 @@ body {
   }
 }
 
+.cornsilkiconcolor {
+  color: cornsilk;
+}
+
+.lightskyblueiconcolor {
+  color: lightskyblue;
+}
+
+.darksalmoniconcolor {
+  color: darksalmon;
+}
+
 .rediconcolor {
   color: #e80417;
 }
