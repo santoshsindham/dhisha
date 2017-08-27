@@ -32,8 +32,12 @@
   background-color: khaki;
 }
 
-.backgroundPaypal {
+.backgroundCornSilk {
   background-color: cornsilk;
+}
+
+.backgroundPaypal {
+  background-color: darkblue;
 }
 
 .backgroundGold {
@@ -59,7 +63,7 @@
  }
 
 body {
-  background-color: #eee;
+  background-color: cornsilk;
 }
 
 .navbar-default {
@@ -134,6 +138,10 @@ body {
 
 .cornsilkiconcolor {
   color: cornsilk;
+}
+
+.honeydewiconcolor {
+  color: honeydew;
 }
 
 .lightskyblueiconcolor {

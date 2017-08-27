@@ -28,7 +28,7 @@ body {
   max-width: 680px;
   padding: 0 15px;
 }
-.container .text-muted {
+.container-fluid .text-muted {
   margin: 20px 0;
   color: white;
 }
@@ -46,10 +46,10 @@ body {
 </script>
 <!-- Part 1: Wrap all page content here -->
 <footer class="footer">
-  <div class="container">
-    <div class="pull-right">
+  <div class="container-fluid">
+    <div class="pull-right text-muted">
       <%= social_share_button_tag("Dhisha") %>
     </div>
-    <p class="text-muted">Copyright &copy; 2017 &middot; <b>Dhisha Human Development Trust.</b></p>
+    <p class="text-muted pull-left">Copyright &copy; 2017 &middot; <b>Dhisha Human Development Trust.</b></p>
   </div>
 </footer>
