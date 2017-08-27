@@ -2,7 +2,7 @@
   <div class="col-md-offset-3 col-md-6">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <h4>Please submit your query here, and we shall get back to you...!</h4>
+        <h4>Please submit your request below</h4>
       </div>
       <div class="panel-body">
       <%= form_for @message, url: create_message_url do |f| %>
@@ -21,7 +21,8 @@
           <%= f.label :content %>
           <%= f.text_area :body, rows: 10, class: 'form-control', placeholder: 'Briefly describe your query here' %>
         </div>
-        <%= f.submit 'Send', class: 'btn btn-primary' %>
+        <%= f.submit 'Submit Request', class: 'btn btn-primary' %>
+        <a class="btn btn-danger pull-right" href="/">Go Back</a>
       <% end %>
       </div>
     </div>

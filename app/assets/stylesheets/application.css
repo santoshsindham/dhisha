@@ -28,6 +28,10 @@
   background-color: midnightblue;
 }
 
+.backgroundKhaki {
+  background-color: khaki;
+}
+
 .backgroundPaypal {
   background-color: cornsilk;
 }
@@ -46,6 +50,12 @@
 
 .notofontclass {
    font-family: "Noto Serif","DejaVu Serif",serif;
+ }
+
+.notofontclass_size {
+   font-family: "Noto Serif","DejaVu Serif",serif;
+   font-size: 18px;
+   color: indigo;
  }
 
 body {
@@ -152,6 +162,10 @@ body {
 
 .bigIconSize12 {
   font-size: 12em !important;
+}
+
+.bigIconSize15 {
+  font-size: 15em !important;
 }
 
 .bigIconSize20 {
