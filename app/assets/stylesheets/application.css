@@ -36,6 +36,10 @@
   background-color: cornsilk;
 }
 
+.backgroundSnow {
+  background-color: snow;
+}
+
 .backgroundPaypal {
   background-color: darkblue;
 }
@@ -63,7 +67,7 @@
  }
 
 body {
-  background-color: cornsilk;
+  background-color: snow;
 }
 
 .navbar-default {
