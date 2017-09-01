@@ -1,6 +1,12 @@
 # README
 
-This is the code base created for a non profit organization Dhisha that came into existence with a mission to all round development of society.
-More details can be found in the wiki https://github.com/santoshsindham/dhisha/wiki
+This is the code base created to support a non profit organization - Dhisha; which came into existence with a mission to support the  inclusive development of our society.
 
-The website can be reached at http://dhisha.org/
+More details of what Dhisha does and to see the live production deployment of this code, please visit http://dhisha.org/
+
+### Technical Stack 
+  - Ruby
+  - Rails
+  - MySql
+  - Capistrano for deployment
+  - AWS
