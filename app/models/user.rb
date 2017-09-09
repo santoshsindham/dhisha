@@ -10,4 +10,9 @@ class User < ApplicationRecord
   def assign_default_role
     self.add_role(:newuser) if self.roles.blank?
   end
+
+  #used for displaying in the rails admin list boxes
+  def title
+      self.email
+  end
 end
