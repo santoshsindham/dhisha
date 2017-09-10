@@ -46,8 +46,8 @@
                 <li><a href="/contact-me"><i class="fa fa-question-circle" aria-hidden="true"></i> Submit query</a></li>
                 <% if (current_user.has_role? :admin) || (current_user.has_role? :superadmin) %>
                   <li role="separator" class="divider"></li>
-                  <li><a href="/admin"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Admin</a></li>
-                  <li><%= link_to 'Administration', rails_admin.dashboard_path, method: :get %></li>
+                  <li><a href="/admin"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Administration</a></li>
+                  <li><a href="/admin/donation/new"><i class="fa fa-usd" aria-hidden="true"></i> Create Donation</a></li>
                 <% end %>
                 <li><a href="/users/sign_out" data-method="delete"><i class="fa fa-power-off blueiconcolor" aria-hidden="true"></i> Log out</a></li>
               </ul>
