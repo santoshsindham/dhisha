@@ -1,0 +1,31 @@
+<% if @donations.exists? %>
+
+<button class="btn btn-lg btn-success" type="button">
+  Total donation made till date is  <span class="badge"><%= @total %></span>
+</button>
+
+<table class="table table-bordered">
+  <tr>
+    <th>S No</th>
+    <th>Cause</th>
+    <th>Amount</th>
+    <th>Currency</th>
+    <th>Comment</th>
+    <th>Date (yyyy-mm-dd) </th>
+  </tr>
+  <% @donations.each_with_index do |donation, index| %>
+    <tr>
+      <td><%= index+1 %></td>
+      <td><%= donation.cause %></td>
+      <td><%= donation.amount %></td>
+      <td><%= donation.currency %></td>
+      <td><%= donation.comment %></td>
+      <td><%= donation.created_at.strftime("%F") %></td>
+    </tr>
+  <% end %>
+  </table>
+  <div class="text-center"><%= render 'paypal_donate_text' %></div>
+
+<% else %>
+  <div class="text-center"><h1>Sorry, no donations found.<%= render 'paypal_donate_text' %></h1></div>
+<% end %>
