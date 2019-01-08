@@ -27,3 +27,5 @@ config/application.yml
 
 .DS_Store
 config/.DS_Store
+
+dhishaserver.pem
