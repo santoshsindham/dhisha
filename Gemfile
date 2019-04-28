@@ -57,7 +57,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # added gems here
 gem "twitter-bootstrap-rails"
 gem "font-awesome-rails"
-gem 'devise', git: 'https://github.com/gogovan/devise.git', branch: 'rails-5.1'
+gem 'devise'
 gem 'erubis'
 gem 'jquery-rails'
 gem 'devise-bootstrap-views'
