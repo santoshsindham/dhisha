@@ -64,7 +64,7 @@ gem 'devise-bootstrap-views'
 gem 'rails_admin', '~> 1.1.1'
 gem "cancancan"
 gem "rolify"
-gem 'mysql2', '~> 0.3.20'
+gem 'mysql2', '~> 0.5.2'
 gem 'figaro'
 gem 'puma'
 gem 'nokogiri'
@@ -78,3 +78,4 @@ group :development do
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
 end
+
