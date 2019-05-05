@@ -72,8 +72,8 @@ gem 'premailer-rails'
 gem 'social-share-button'
 
 group :development do
-  gem 'capistrano', '~> 3.6'
-  gem 'capistrano-rails', '~> 1.3'
+  gem 'capistrano'
+  gem 'capistrano-rails'
   gem 'capistrano3-puma'
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rvm'
