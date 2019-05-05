@@ -90,7 +90,7 @@ Rails.application.configure do
 
   config.assets.digest = true
   config.serve_static_assets = false
-  config.assets.compile = false
+  config.assets.compile = true
   config.serve_static_files = true
 
 
