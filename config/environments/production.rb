@@ -103,7 +103,7 @@ Rails.application.configure do
   config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   
   ActionMailer::Base.smtp_settings = {
-       :address              => ENV["AWS_SES_SERVER"],
+       :address              => "email-smtp.us-east-1.amazonaws.com",
        :domain               => ENV["DOMAIN_NAME"],
        :port                 => 25,
        :enable_starttls_auto => true,
