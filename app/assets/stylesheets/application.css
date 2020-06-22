@@ -50,7 +50,7 @@
 
 .navbar-brand {
      position: relative;
-     background-image: url("dhisha_logo.png");
+     background: url(/dhisha_logo.png);
      width: 60px;
      left: 15px;
      background-size: contain;
