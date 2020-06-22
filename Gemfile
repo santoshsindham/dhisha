@@ -61,7 +61,7 @@ gem 'devise'
 gem 'erubis'
 gem 'jquery-rails'
 gem 'devise-bootstrap-views'
-gem 'rails_admin', '~> 1.1.1'
+gem 'rails_admin', '~> 1.3.0'
 gem "cancancan"
 gem "rolify"
 gem 'mysql2', '~> 0.5.2'
